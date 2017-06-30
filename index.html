@@ -3,19 +3,103 @@
 <head>
 	<title>Swifts</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
 </head>
-<header>
-<div id="navbar">
-		<ul>
-				<li><a href="Men.html">Men's</a></li>
-				<li><a href="Sale.html">On Sale</a></li>
-				<li><a href="women.html">Women's</a></li>
-				<li><a href="kids.html">Kid's</a></li>
-		</ul>
-</div>
-</header>
 <body>
+<!--Navigation bar-->
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Men.html">Men's</a></li>
+		<li><a href="Sale.html">On Sale</a></li>
+		<li><a href="women.html">Women's</a></li>
+		<li><a href="kids.html">Kid's</a></li>
+	</ul>
+<!--slidshow-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://static.pexels.com/photos/7432/pexels-photo.jpg" style="width: 100%" alt="Womens shoes">
+    <div class="text">Free Shipping on select Women's running shoes</div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://static.pexels.com/photos/167810/pexels-photo-167810.jpeg" style="width: 100%" alt="picture of shoes">
+    <div class="text">Adidas Boost</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://static.pexels.com/photos/33148/shoes-lebron-nike-spalding.jpg" style="width:100%" alt="picture of shoes">
+    <div class="text">50% off Sale on Kid's basketball Shoes</div>
+  </div>
+
+  
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!--javascript-->
+
+<script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000); 
+}
+</script>	
+<!--next section of page-->
+
+<div class="section">
+			<h1>Share Your Pictures in some fresh 
+			 <br>kicks on our Blog</h1>
+		
+	<div class="slides-containertwo">
+	    <img class="blog" src="https://static.pexels.com/photos/196666/pexels-photo-196666.jpeg" style="width: 650px; height:500px" alt="Womens shoes">
+	    <img class="blog" src="https://static.pexels.com/photos/112570/pexels-photo-112570.jpeg" style="width:650px; height:500px" alt="picture of shoes">
+			<img class="blog" src="https://static.pexels.com/photos/24503/pexels-photo-24503.jpg" style="width:650px; height:500px" alt="picture of shoes">
+			<img class="blog" src="https://static.pexels.com/photos/126401/pexels-photo-126401.jpeg" style="width:650px; height:500px" alt="picture of shoes">
+	 		<img class="blog" src="https://static.pexels.com/photos/6346/healthy-light-woman-legs.jpg" style="width: 650px; height:500px" alt="picture of shoes">
+	</div>
+	<script>
+		var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("blog");
+	    for (i = 0; i < slides.length; i++) {
+	        slides[i].style.display = "none"; 
+	    }
+	    slideIndex++;
+	    if (slideIndex> slides.length) {slideIndex = 1} 
+	    slides[slideIndex-1].style.display = "block"; 
+	    setTimeout(showSlides, 4000); // Change image every 2 seconds
+	}
+	</script>
+		<div class="box">
+			<h2>Or follow our Social</h2>
+			<img src="file:///Users/Creator/Code/icons8-Instagram-512.png" style="width: 100px; height: 100px" alt="instagram">
+			<img src="file:///Users/Creator/Code/icons8-Tumblr-528.png" style="width: 100px; height: 100px;" alt="tumblr">
+			<img src="file:///Users/Creator/Code/icons8-Facebook-512.png" style="width: 100px; height: 100px;" alt="facebook">
+		</div>
+</div>
+<footer>
+	
+</footer>
 
 </body>
 </html>
