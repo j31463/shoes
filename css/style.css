@@ -1,7 +1,4 @@
 
-body{
-  background-color: 
-}
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -187,4 +184,35 @@ button:hover{
 }
 .box > img{
   border: none;
+}
+form{
+  float: left;
+  position: relative;
+  bottom: 60px;
+  font-family: courier;
+  color: white;
+  background-color: #333;
+  width: 100%;
+}
+fieldset{
+  border-radius: 5px;
+}
+#email{
+  background-color: rgb(207,207,207);
+  color: #333;
+  border-radius: 2px;
+}
+#tbox{
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border-color: white;
+}
+#ibox{
+  background-color: rgb(17,144,207);
+  border-radius: 5px;
+  margin-left: 60px;
+}
+#ibox:hover{
+  background-color: yellow;
 }
