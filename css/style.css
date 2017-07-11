@@ -34,7 +34,76 @@ li a:hover{
 	text-decoration: solid red underline;
 }
 * {box-sizing:border-box}
+/*banner area*/
 
+
+.banner > h1{
+  color: black;
+  background-color: rgb(207,207,207);
+  float: left;
+  position: relative;
+  z-index: -1;
+  top: 50px;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-family: 'Lobster Two', cursive;
+  font-size: 100px;
+}
+.icon{
+  float: left;
+  position: relative;
+  left: 800px;
+  bottom: 150px;
+  z-index: -1;
+}
+.icontwo{
+  float: left;
+  position: relative;
+  left: 850px;
+  bottom: 150px;
+  z-index: -1;
+}
+.iconthree{
+  float: left;
+  position: relative;
+  left: 900px;
+  bottom: 150px;
+  z-index: -1;
+}
+/*slideshow area*/
+
+
+button{
+  background-color: none;
+  border: none;
+  padding: 10px 24px;
+}
+button:hover{
+  background-color: white;
+}
+.text {
+  color: #f2f2f2;
+  background-color: rgba(71,74,79,0.5);
+  font-size: 20px;
+  font-family: courier, verdana, sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 1100px;
+  
+}
+.left{
+  float: left;
+  position: relative;
+  bottom: 400px;
+}
+.right{
+  float: right;
+  position: relative;
+  bottom: 400px;
+}
 .section{
 	position: relative;
 	top: 100px;
@@ -46,11 +115,12 @@ li a:hover{
   font-family: 'Domine', serif;
 }
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
+  height: 600px;
   position: relative;
-  margin: auto;
+  margin-bottom: 780px;
   position: relative;
-  top: 100px;
+  top: 50px;
   z-index: -1;
 }
 .slides-containertwo{
@@ -66,6 +136,7 @@ li a:hover{
  img{
 	border: .5px solid rgba(207,207,207,0.8);
 	border-radius: 5px 5px;
+  
 
 }
 
@@ -80,17 +151,6 @@ li a:hover{
 }
 
 
-.text {
-  color: #f2f2f2;
-  background-color: #474a4f;
-  font-size: 20px;
-  font-family: courier, verdana, sans-serif;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 .numbertext {
   color: #f2f2f2;
@@ -98,21 +158,6 @@ li a:hover{
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active .dot:hover {
-  background-color: #717171;
 }
 
 
@@ -137,11 +182,9 @@ li a:hover{
   font-family: 'Domine', serif;
   float: right;
   position: relative;
-  right: 150px;
   text-align: center;
   bottom: 500px;
 }
 .box > img{
   border: none;
-  padding:
 }
