@@ -1,3 +1,6 @@
+body{
+
+}
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -21,7 +24,8 @@ li a{
 	padding: 8px;
   font-family: 'Domine', serif;
 	color: white;
-	padding: 20px 100px ;
+  margin-left: 100px;
+	padding: 1.25em 3.25em ;
 	text-decoration: none;
 
 }
@@ -30,51 +34,74 @@ li a:hover{
 	text-decoration: solid red underline;
 }
 * {box-sizing:border-box}
+.main{
+  height: 60px;
+  width: 100px;
+  float: left;
+  border: none;
+  background-color: none;
+}
 /*banner area*/
 
 
 .banner > h1{
-  color: black;
-  background-color: rgb(207,207,207);
+  color: rgb(255,89,143);
+  background-color: rgb(118,181,231);
   float: left;
   position: relative;
   z-index: -1;
   top: 50px;
   width: 100%;
-  height: 150px;
+  height: 100px;
   padding: 10px;
   font-family: 'Lobster Two', cursive;
-  font-size: 100px;
+  font-size: 75px;
+}
+#logos{
+  float: right;
+  position: relative;
+  bottom: 100px;
+  margin-right: 10px;
 }
 .icon{
-  float: left;
-  position: relative;
-  left: 800px;
-  bottom: 150px;
-  z-index: -1;
+
+  padding-bottom: 5%;
+  margin-right: 10px;
+  bottom: 100px;
+  width: 90px;
+  height: 95px;
+
 }
 .icontwo{
-  float: left;
-  position: relative;
-  left: 850px;
-  bottom: 150px;
+
+  bottom: 100px;
   z-index: -1;
+  margin-right: 10px;
+  width: 4.5em;
+  height: 4.5em;
 }
 .iconthree{
-  float: left;
-  position: relative;
-  left: 900px;
-  bottom: 150px;
+
+  bottom: 100px;
+  margin-right: 10px;
   z-index: -1;
+  width: 4.5em;
+  height: 4.5em;
+}
+.container{
+
+  clear: both;
+  margin-left: 10%;
 }
 .box{
+
   height: 400px;
   display: inline-block;
   text-align: center;
   width: 400px;
   border: 1px solid black;
   float: left;
-  margin: 30px;
+  margin: 20px;
   position: relative;
   border-radius: 3px;
   
@@ -82,69 +109,75 @@ li a:hover{
   font-family: 'Domine', serif;
 }
 .one{
-  right: 306px; 
-  padding-top: 12%;
-  padding-left: 40px;
+
+  padding-top: 6%;
+  width: 25%;
+  color: rgb(255,89,143);
   background-image: url("file:///Users/Creator/Downloads/autumn-goodman-242810.jpg");
 }
 .two{
-  right: 354px;
+  
+  width: 25%;
   padding-top: 12%;
   padding-right: 40px;
+  color: rgb(255,89,143);
   background-image: url("file:///Users/Creator/Code/workout.jpeg");
 }
 .three{
-  bottom: 50px;
-  right: 10px;
+  
+  width: 25%;
+  color: rgb(255,89,143); 
   padding-top: 12%;
   padding-right: 30px;
   background-image: url("file:///Users/Creator/Code/athletic.png");
 }
 .four{
-  bottom: 50px;
-  right: 57px;
+ 
+  width: 25%;
+  color: rgb(255,89,143);
   margin-bottom: -10%;
-  padding-top: 16%;
+  padding-top: 1%;
   background-image: url("file:///Users/Creator/Code/pexels-photo-103520.jpeg");
 }
 .five{
-  bottom: 50px;
-  right: 103px;
+  
+  width: 25%;
+  color: rgb(255,89,143);
   margin-bottom: -20%;
   padding-top: 13.5%;
   background-image: url("file:///Users/Creator/Downloads/william-stitt-111350.jpg");
 }
 .six{
-  float: right;
+  
   position: relative;
-  bottom: 605px;
-  right: 147px;
-  padding-top: 12%;
-  padding-right: 30px;
+  width: 25%;
+  color: rgb(255,89,143);
+  padding-top: 14%;
   background-image: url("file:///Users/Creator/Code/kids.jpg");
 }
 .seven{
-  width: 95%;
-  padding-top: 13%;
+  
+  width: 82%;
+  padding-top: 11%;
   font-size: 50px;
   color: white;
   background-image: url("https://static.pexels.com/photos/322207/pexels-photo-322207.jpeg");
 }
 .seven:hover{
   background-image: url("file:///Users/Creator/Downloads/pineapple-supply-co-244468.jpg");
-  font-size: 10em;
+  font-size: 7em;
   color: rgb(255,89,143);
 }
 
 .eight{
-  width: 95%;
-  padding-top: 13%;
+  width: 82%;
+  padding-top: 12%;
   font-size: 50px;
-  color: white;
+  color: rgb(255,89,143);
   background-image: url("file:///Users/Creator/Downloads/jakob-owens-91197.jpg");
 }
 .eight:hover{
-  background-image: url("https://static.pexels.com/photos/128598/pexels-photo-128598.jpeg");
+  background-image: url("file:///Users/Creator/Code/pexels-photo-128598.jpeg");
   font-size: 10em;
-  color: rgb(255,89,143);
+  color: white;
 }
