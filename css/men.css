@@ -1,69 +1,191 @@
+html{
+    font-family: 'Domine', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
 ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	clear: both;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  clear: both;
+  margin-left: -0.6%;
 }
 li{
-	display: inline;
-	float: left;
-	padding-top: 20px;
-	padding-bottom: 20px;	
+  display: inline;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+
 }
 
 li a{
-	display: ;
-	padding: 8px;
+
   font-family: 'Domine', serif;
-	color: white;
-	padding: 20px 100px ;
-	text-decoration: none;
-
+  color: white;
+  margin-left: 100px;
+  padding: 1.25em 2.5em 1.25em 1.5em ;
+  text-decoration: none;
 }
+
 li a:hover{
-	background-color: #111;
-	text-decoration: solid red underline;
+  background-color: #111;
+  text-decoration: solid red underline;
 }
+
 * {box-sizing:border-box}
-/*banner area*/
+
+.main{
+  height: 60px;
+  width: 100px;
+  border-radius: 3px;
+  float: left;
+  border: none;
+  background-color: none;
+}
+
+.title{
+
+}
 
 
+.container_main{
+  width: 100%;
+  height: 500px;
+  /*background-color: red;*/
+}
+/*search bar*/
+input[type=text]{
+
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png'); 
+  background-repeat: no-repeat;
+  margin-top: 8px;
+  margin-left: 40px;  
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus{
+
+  width: 15%;
+  margin-left: 20px;
+  rgb(118,181,231)
+}
 .banner > h1{
-  color: black;
-  background-color: rgb(207,207,207);
+  color: rgb(255,89,143);
+  background-image: linear-gradient(#76b5e7, #c9dcf3); 
   float: left;
   position: relative;
   z-index: -1;
   top: 50px;
   width: 100%;
-  height: 150px;
+  height: 100px;
   padding: 10px;
   font-family: 'Lobster Two', cursive;
-  font-size: 100px;
+  font-size: 75px;
 }
-.icon{
+/*body toggle and shoe display part of website*/
+.main{
+
   float: left;
   position: relative;
-  left: 800px;
-  bottom: 150px;
-  z-index: -1;
 }
-.icontwo{
+.box{
+
+  height: 400px;
+  /*display: inline;*/
+  text-align: center;
+  width: 400px;
   float: left;
+  margin: 20px;
   position: relative;
-  left: 850px;
-  bottom: 150px;
+  border-radius: 3px;
   z-index: -1;
+  box-shadow: 10px 10px 5px rgb(163,163,163);
 }
-.iconthree{
+.one{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikelunarepic2.png");
+}
+.two{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikehuarache.png");
+}
+.three{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/yeezy.png");
+}
+.four{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/adidasMboosts.png");
+}
+.five{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikeflynitracerM.png");
+}
+
+
+.six{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikefreerunairmax.png");
+}
+.seven{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/adidas%20tubluar.jpg");
+}
+.eight{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/Airforce1M.png");
+}
+.nine{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/AirmaxtavasM.jpg");
+}
+
+
+.ten{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikespecialfieldairforce1M.jpg");
+}
+.eleven{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/newbalance574M.jpg");
+}
+.twelve{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/huarache.jpg");
+}
+.thirteen{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/aj1royalblueM.jpg");
+}
+.fourteen{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/puremoney4sM.jpg");
+}
+.fifteen{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikeairprestosM.jpg");
+}
+
+.row{
+  height: 400px;
+  width: 100%
+}
+.flex{
+  display: flex;
+  align-items: center;
+  min-width: 4000px;
+}
+
+
+.pull-left{
   float: left;
-  position: relative;
-  left: 900px;
-  bottom: 150px;
-  z-index: -1;
+}
+
+.pull-right{
+  float: right;
+}
+
+.clear-left{
+  clear: left;
+}
+
+.clear-right{
+  clear: right;
 }

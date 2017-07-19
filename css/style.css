@@ -1,19 +1,21 @@
-html{
-  font-size: 16px;
+body{
+  
 }
 
 ul{
+
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
-	position: absolute;
+	position: fixed;
 	top: 0;
-	width: 98.71%;
+	width: 100%;
   overflow: hidden;
 }
 li{
+
 	display: block;
 	float: left;
 	padding-top: 20px;
@@ -22,231 +24,183 @@ li{
 }
 
 li a{
-	display: ;
-	padding: .5rem;
+
+	
+	 padding: 8px;
   font-family: 'Domine', serif;
-	color: white;
-	padding: 1.25rem 6.25rem ;
-	text-decoration: none;
+  color: white;
+  margin-left: 100px;
+  padding: 1.25em 2.5em 1.25em 1.5em ;
+  text-decoration: none;
 
 }
 li a:hover{
+
 	background-color: #111;
 	text-decoration: solid red underline;
 }
 * {box-sizing:border-box}
         /*banner area*/
-
-
 .banner > h1{
-  color: black;
-  background-color: rgb(207,207,207);
+
   float: left;
-  position: absolute;
+  position: relative;
+  background-image: linear-gradient(#4871b6, #c9dcf3);
+  height: 100px;
+  width: 91.05%;
   z-index: -1;
-  margin-top: 10;
-  margin-bottom: 20%;
-  top: 50px;
-  width: 100%;
-  height: 150px;
-  padding: 10px;
+  font-size: 75px;
+  margin-left: -0.03%;
+  font-family: 'lobster+two', serif;
+  margin-top: 7%;
+  margin-bottom: -8%;
   font-family: 'Lobster Two', cursive;
-  font-size: 100px;
-  clear: both;
+  color: rgb(255,89,143);
+  box-shadow: 10px 10px 5px rgb(163,163,163);
+  border-radius: 5px;
 }
-.icon{
-  float: left;
+.icon2{
+  float: right;
   position: relative;
-  left: 90%;
-  bottom: 150px;
   z-index: -1;
   height: 100px;
   width: 100px;
-  overflow: hidden;
+  clear: right;
+
 }
-.icontwo{
-  float: left;
-  position: relative;
-  left: 65%;
-  bottom: 150px;
-  z-index: -1;
-  height: 96px;
-  width: 96px;
-  overflow: hidden;
+#logo{
+  margin-bottom:2%;
+  margin-top: 2%;
 }
-.iconthree{
-  float: left;
-  position: relative;
-  left: 67%;
-  bottom: 150px;
-  z-index: -1;
-  height: 100px;
+.main{
+  height: 60px;
   width: 100px;
-  overflow: hidden;
+  border-radius: 3px;
+  float: left;
+  border: none;
+  background-color: none;
 }
-/*slideshow area*/
+input[type=text]{
 
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png'); 
+  background-repeat: no-repeat;
+  margin-top: 8px;
+  margin-left: 40px;  
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus{
 
+  width: 15%;
+  margin-left: 20px;
+  
+}
+.slideshow-container{
+
+  float: left;
+  position: relative;
+  z-index: -1;
+  margin-left: 0.25%;
+  border-radius: 5px;
+  margin-top: -60%;
+}
 button{
 
-  background-color: none;
+  float: left;
+  position: relative;
+  margin-left: 3%;
+  height: 30px;
+  width: 40px;
+  bottom: 145px;
+  box-shadow: 2%;
   border: none;
-  border-radius: 2px;
-  padding: 10px 24px;
+  border-radius: 3px;
+  z-index: -1;
+  background-color: rgb(1,221,221);
 }
 button:hover{
 
-  background-color: white;
+  background-color: rgb(118,181,231);
 }
 .left{
 
   float: left;
-  position: relative;
-  bottom: 600px;
 }
 .right{
 
   float: right;
-  position: relative;
-  bottom: 600px;
+  margin-right: 11%;
 }
-.text {
+.text{
 
-  color: #f2f2f2;
-  background-color: rgba(71,74,79,0.5);
-  font-size: 20px;
-  font-family: courier, verdana, sans-serif;
-  padding: 8px 12px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  margin-top: -10%;
-  
-}
-
-.section{
-
-	position: relative;
-	top: 100px;
-	padding: 10px;
-	color:#ffffff;
-	background-color: rgba(207,207,207,0.8);
-  width: 100%;
-  z-index: -1;
-  font-family: 'Domine', serif;
-}
-.slideshow-container {
-
-  width: 100%;
-  height: 600px;
-  position: relative;
-  margin-bottom: 780px;
-  margin-top: 20%;
-  top: 50px;
-  z-index: -1;
-}
-.slides-containertwo{
-
-  padding: 60px 0px 100px 30px;
-}
-
-.Slides {
-
-    display: none;
-    margin-top: 30px;
-}
- img{
-
-	border: .5px solid rgba(207,207,207,0.8);
-	border-radius: 5px 5px;
-  
-
-}
-
-.next {
-
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-
-.prev:hover, .next:hover {
-
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-.numbertext {
-
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-.box{
-  color: white;
-  font-family: 'Domine', serif;
-  float: right;
-  position: relative;
-  text-align: center;
-  bottom: 500px;
-}
-.box > img{
-  border: none;
-}
-.boximg{
-  
-}
-.boxtxt{
-
-}
-form{
+  bottom: 100px;
   float: left;
   position: relative;
-  bottom: 60px;
-  font-family: courier;
+  background-color: rgb(255,89,143);
+  text-align: center;
   color: white;
-  background-color: #333;
+  font-family: courier;
+  width: 90%;
+  height: 60px;
+  padding-top: 1%;
+  border-radius: 2px;
+}
+.section{
+  float: left;
+  position: relative;
+  z-index: -1;
+  background-color: rgba(207,207,207, 0.8);
   width: 100%;
+  border-radius: 4px;
+  height: 10%;
+  font-family: 'Domine', serif;
+  color: rgb(72,113,182);
+
 }
+
+.blog{
+  width: 45%; 
+  height:20%;
+  margin-left: 5%;
+  clear: left;
+  margin-bottom: -10%;
+  box-shadow: 10px 10px 5px rgb(163,163,163);
+  border-radius: 5px;
+}
+.box{
+  float: right;
+  position: relative;
+  width: 40%;
+  bottom: 200px;
+  text-align: center;
+  margin-right: 5%;
+  border-radius: 5px;
+
+}
+
 fieldset{
-  border-radius: 5px;
+  float: left;
+  width: 90%;
+  font-family: courier;
+  position: relative;
+  background-color: rgb(186,215,235);
+  color: rgb(255,89,143);
 }
-#email{
-  background-color: rgb(207,207,207);
-  color: #333;
-  border-radius: 2px;
+h1{
+  float: left;
+  margin-left: 5%;
+  position: relative;
 }
-#tbox{
-  width: 200px;
-  margin-bottom: 10px;
-  border-radius: 2px;
-  border-color: white;
-}
-#ibox{
-  background-color: rgb(17,144,207);
-  border-radius: 5px;
-  margin-left: 60px;
-}
-#ibox:hover{
-  background-color: yellow;
+
+.design2{
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(#76b5e7, #c9dcf3);;
+  position: fixed;width: 100%;
 }

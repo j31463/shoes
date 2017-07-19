@@ -1,6 +1,4 @@
-body{
 
-}
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -11,23 +9,24 @@ ul{
 	top: 0;
 	width: 100%;
 	clear: both;
+  margin-left: -0.6%;
 }
 li{
 	display: inline;
 	float: left;
 	padding-top: 20px;
 	padding-bottom: 20px;	
+
 }
 
 li a{
-	display: ;
+
 	padding: 8px;
   font-family: 'Domine', serif;
 	color: white;
   margin-left: 100px;
-	padding: 1.25em 3.25em ;
+	padding: 1.25em 2.5em 1.25em 1.5em ;
 	text-decoration: none;
-
 }
 li a:hover{
 	background-color: #111;
@@ -37,61 +36,82 @@ li a:hover{
 .main{
   height: 60px;
   width: 100px;
+  border-radius: 3px;
   float: left;
   border: none;
   background-color: none;
+}
+/*search bar*/
+input[type=text]{
+
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png'); 
+  background-repeat: no-repeat;
+  margin-top: 8px;
+  margin-left: 40px;  
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus{
+
+  width: 15%;
+  margin-left: 20px;
+  
 }
 /*banner area*/
 
 
 .banner > h1{
   color: rgb(255,89,143);
-  background-color: rgb(118,181,231);
+  background-image: linear-gradient(#76b5e7, #c9dcf3);
   float: left;
   position: relative;
   z-index: -1;
   top: 50px;
-  width: 100%;
+  width: 88%;
   height: 100px;
   padding: 10px;
   font-family: 'Lobster Two', cursive;
   font-size: 75px;
 }
-#logos{
+/*logos*/
+
+.container{
   float: right;
   position: relative;
-  bottom: 100px;
-  margin-right: 10px;
+  display: inline-block;
+  margin: 10px 50px 30px 0px;
+  width: 4.5em;
+  height: 4.5em;
+  z-index: -1;
 }
 .icon{
-
-  padding-bottom: 5%;
-  margin-right: 10px;
-  bottom: 100px;
-  width: 90px;
-  height: 95px;
-
+  height: 100px;
+  width: 100px;
+  margin: 30px 20px 100px 0px;
 }
-.icontwo{
-
-  bottom: 100px;
-  z-index: -1;
-  margin-right: 10px;
-  width: 4.5em;
-  height: 4.5em;
+.icon2{
+  margin-bottom: 80px;
 }
-.iconthree{
-
-  bottom: 100px;
-  margin-right: 10px;
-  z-index: -1;
-  width: 4.5em;
-  height: 4.5em;
+.row{
+  margin-bottom: 50px;
 }
-.container{
+
+/*shopping boxes*/
+
+.container_main{
 
   clear: both;
-  margin-left: 10%;
+  margin-left: 1%;
+}
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
 }
 .box{
 
@@ -99,85 +119,106 @@ li a:hover{
   display: inline-block;
   text-align: center;
   width: 400px;
-  border: 1px solid black;
   float: left;
   margin: 20px;
   position: relative;
   border-radius: 3px;
-  
   z-index: -1;
   font-family: 'Domine', serif;
+  box-shadow: 10px 10px 5px rgb(163,163,163);
+}
+.box:hover{
+  animation: bouncing 0.4s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
 }
 .one{
 
   padding-top: 6%;
-  width: 25%;
+  width: 26%;
   color: rgb(255,89,143);
-  background-image: url("file:///Users/Creator/Downloads/autumn-goodman-242810.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/autumn-goodman-242810.jpg");
 }
 .two{
   
-  width: 25%;
+  width: 26%;
   padding-top: 12%;
   padding-right: 40px;
   color: rgb(255,89,143);
-  background-image: url("file:///Users/Creator/Code/workout.jpeg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/workout.jpeg");
 }
 .three{
   
-  width: 25%;
+  width: 26%;
   color: rgb(255,89,143); 
   padding-top: 12%;
   padding-right: 30px;
-  background-image: url("file:///Users/Creator/Code/athletic.png");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/athletic.png");
 }
 .four{
  
-  width: 25%;
+  width: 26%;
   color: rgb(255,89,143);
   margin-bottom: -10%;
   padding-top: 1%;
-  background-image: url("file:///Users/Creator/Code/pexels-photo-103520.jpeg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/pexels-photo-103520.jpeg");
 }
 .five{
   
-  width: 25%;
+  width: 26%;
   color: rgb(255,89,143);
   margin-bottom: -20%;
   padding-top: 13.5%;
-  background-image: url("file:///Users/Creator/Downloads/william-stitt-111350.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/william-stitt-111350.jpg");
 }
 .six{
   
   position: relative;
-  width: 25%;
+  width: 26%;
   color: rgb(255,89,143);
   padding-top: 14%;
-  background-image: url("file:///Users/Creator/Code/kids.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/kids.jpg");
 }
 .seven{
   
-  width: 82%;
+  width: 84%;
   padding-top: 11%;
   font-size: 50px;
   color: white;
   background-image: url("https://static.pexels.com/photos/322207/pexels-photo-322207.jpeg");
+  animation: none;
 }
 .seven:hover{
-  background-image: url("file:///Users/Creator/Downloads/pineapple-supply-co-244468.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/pineapple-supply-co-244468.jpg");
   font-size: 7em;
   color: rgb(255,89,143);
+  animation: none;
 }
 
 .eight{
-  width: 82%;
+  width: 84%;
   padding-top: 12%;
   font-size: 50px;
   color: rgb(255,89,143);
   background-image: url("file:///Users/Creator/Downloads/jakob-owens-91197.jpg");
+  animation: none;
 }
 .eight:hover{
-  background-image: url("file:///Users/Creator/Code/pexels-photo-128598.jpeg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/pexels-photo-128598.jpeg");
   font-size: 10em;
   color: white;
+  animation: none;
+}
+
+.design{
+  height: 100%;
+  z-index: -2;
+  background-color: white;
+  width: 87%;
+  position: fixed;
+}
+
+.design2{
+  height: 100%;
+  z-index: -3;
+  background-image: linear-gradient(#76b5e7, #c9dcf3);
+  position: fixed;width: 100%;
 }
