@@ -82,8 +82,8 @@ input[type=text]:focus{
   rgb(118,181,231)
 }
 .banner > h1{
-  color: rgb(255,89,143);
-  background-image: linear-gradient(#76b5e7, #c9dcf3); 
+  color: #ff4e50;
+  background-image: linear-gradient(#76b5e7, white); 
   float: left;
   position: relative;
   z-index: -1;
@@ -93,6 +93,8 @@ input[type=text]:focus{
   padding: 10px;
   font-family: 'Lobster Two', cursive;
   font-size: 75px;
+  box-shadow: 10px 10px 5px rgb(163,163,163);
+  border-radius: 5px;
 }
 /*body toggle and shoe display part of website*/
 .main{
@@ -112,6 +114,7 @@ input[type=text]:focus{
   z-index: -1;
   box-shadow: 10px 10px 5px rgb(163,163,163);
 }
+
 .one{
   clear: left;
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikelunarepic2.png");
@@ -122,6 +125,13 @@ input[type=text]:focus{
 .three{
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/yeezy.png");
 }
+.three:hover{
+  color: #ff4e50;
+  font-stretch: 1px;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
 .four{
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/adidasMboosts.png");
 }
@@ -165,13 +175,13 @@ input[type=text]:focus{
 
 .set-one{
   clear: left;
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/ajMshirts.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/ajMshirts.png");
 }
 .set-two{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/Mnikeshirt.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/Mnikeshirt.png");
 }
 .set-three{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/mensadidasshirts.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/mensadidasshirts.png");
 }
 .set-four{
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/jordanshortsM.png");
@@ -186,10 +196,10 @@ input[type=text]:focus{
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/jordanjoggersM.png");
 }
 .set-eight{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikejoggersM.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikejoggersM.png");
 }
 .set-nine{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/mens%20joggers.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/mens%20joggers.png");
 }
 
 .pull-left{
@@ -224,14 +234,17 @@ margin-bottom: 100px;
 }
 #main_content li.notselected
 {
- background-color: white;
+ background-color: transparent;
  width: 300px;
  color:#292A0A; 
  font-family: 'Lobster Two', cursive;
 }
+#main_content li.notselected:hover{
+  background-color: #01dddd;
+}
 #main_content li.selected
 {
- background-color: #ff598f;
+ background-color: #ff4e50;
  font-family: 'Lobster Two', cursive;
  width: 300px;
  color: #01dddd; 
@@ -250,8 +263,20 @@ margin-bottom: 100px;
  line-height: 1.6em;
  word-spacing:4px;
 }
+h2{
 
-
+  color: #ff4e50;  
+  z-index: -1;
+  top: 10px;
+  position: relative;
+}
+.design2{
+  height: 70%;
+  z-index: -2;
+  background-image: linear-gradient(#ff4e50, #c9dcf3, white);;
+  position: fixed;
+  width: 100%;
+}
 
 
 
