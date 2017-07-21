@@ -3,6 +3,8 @@
 <head>
 	<title>Swift men</title>
 	<link rel="stylesheet" type="text/css" href="css/men.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
 </head>
 <body>
 <!--Navigation bar-->
@@ -31,11 +33,13 @@
 </div>
 
 <!--shoespage-->
-	<div class="panel-heading">
-		<button class="btn btn-primary"><a href="#shoesgallery" data-toggle="tab"></a>Shoes</button>
-	</div>
+<div id="main_content">
+
+ <li class="selected" id="page1" onclick="change_tab(this.id);">Shoes</li>
+ <li class="notselected" id="page2" onclick="change_tab(this.id);">Apparel</li>
+ 
 	
-<div class="container_main">
+<div class='hidden_desc' id="page1_desc"> 
 	<div class="box one pull-left">Men's Nike LunarEpic2</div>
 	<div class="box two pull-left">Men's Nike Air Huarache</div>
 	<div class="box three pull-left">Men's Adidas Yeezy Collection</div>
@@ -48,10 +52,48 @@
 	<div class="box ten pull-left">Men's Nike Special Forces AF1</div>
 	<div class="box eleven pull-left">Men's New Balance 574</div>
 	<div class="box twelve pull-left">Men's Nike Air Huarache</div>
-	<div class="box thirteen pull-left">Men's Air Jordan Royal 1</div>
-	<div class="box fourteen pull-left">Men's Air Jordan Pure Money 4</div>
-	<div class="box fifteen pull-left">Men's Nike Air Presto</div>
+	<div class="box thirteen pull-left">Men's Air Jordan Royal 1s</div>
+	<div class="box fourteen pull-left">Men's Air Jordan Pure Money 4s</div>
+	<div class="box fifteen pull-left">Men's Air Jordan Sport Blue 3s</div>
 </div>
+ <div class='hidden_desc' id="page2_desc">
+	<div class="box set-one pull-left"></div>
+	<div class="box set-two pull-left"></div>
+	<div class="box set-three pull-left"></div>
+	<div class="box set-four pull-left"></div>
+	<div class="box set-five pull-left"></div>
+	<div class="box set-six pull-left"></div>
+	<div class="box set-seven pull-left"></div>
+	<div class="box set-eight pull-left"></div>
+	<div class="box set-nine pull-left"></div>
+</div>
+<div id="page_content">
+		<div class="box one pull-left">Men's Nike LunarEpic2</div>
+	<div class="box two pull-left">Men's Nike Air Huarache</div>
+	<div class="box three pull-left">Men's Adidas Yeezy Collection</div>
+	<div class="box four pull-left">Men's Adidas Boosts</div>
+	<div class="box five pull-left">Men's Nike Flynit Racers</div>
+	<div class="box six pull-left">Men's Nike Air Free Runs</div>
+	<div class="box seven pull-left">Men's Adidas Tubluar</div>
+	<div class="box eight pull-left">Men's Nike Air Force 1</div>
+	<div class="box nine pull-left">Men's Nike Air Tava</div>
+	<div class="box ten pull-left">Men's Nike Special Forces AF1</div>
+	<div class="box eleven pull-left">Men's New Balance 574</div>
+	<div class="box twelve pull-left">Men's Nike Air Huarache</div>
+	<div class="box thirteen pull-left">Men's Air Jordan Royal 1s</div>
+	<div class="box fourteen pull-left">Men's Air Jordan Pure Money 4s</div>
+	<div class="box fifteen pull-left">Men's Air Jordan Sport Blue 3s</div>
+</div>
+<script>
+
+	function change_tab(id){
+		document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+		document.getElementById("page1").className="notselected";
+		document.getElementById("page2").className="notselected";
+		document.getElementById(id).className="selected";
+	}
+</script>
+
 
 
 

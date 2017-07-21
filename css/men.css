@@ -103,7 +103,6 @@ input[type=text]:focus{
 .box{
 
   height: 400px;
-  /*display: inline;*/
   text-align: center;
   width: 400px;
   float: left;
@@ -114,6 +113,7 @@ input[type=text]:focus{
   box-shadow: 10px 10px 5px rgb(163,163,163);
 }
 .one{
+  clear: left;
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikelunarepic2.png");
 }
 .two{
@@ -134,13 +134,13 @@ input[type=text]:focus{
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikefreerunairmax.png");
 }
 .seven{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/adidas%20tubluar.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/adidas%20tubluar.png");
 }
 .eight{
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/Airforce1M.png");
 }
 .nine{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/AirmaxtavasM.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/AirmaxtavasM.png");
 }
 
 
@@ -148,31 +148,49 @@ input[type=text]:focus{
   background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikespecialfieldairforce1M.jpg");
 }
 .eleven{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/newbalance574M.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/newbalance574M.png");
 }
 .twelve{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/huarache.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/huarache.png");
 }
 .thirteen{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/aj1royalblueM.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/aj1royalblueM.png");
 }
 .fourteen{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/puremoney4sM.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/puremoney4sM.png");
 }
 .fifteen{
-  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikeairprestosM.jpg");
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/retro3.png");
 }
 
-.row{
-  height: 400px;
-  width: 100%
+.set-one{
+  clear: left;
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/ajMshirts.jpg");
 }
-.flex{
-  display: flex;
-  align-items: center;
-  min-width: 4000px;
+.set-two{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/Mnikeshirt.jpg");
 }
-
+.set-three{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/mensadidasshirts.jpg");
+}
+.set-four{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/jordanshortsM.png");
+}
+.set-five{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/adidasMshorts.png");
+}
+.set-six{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/mensshortsnike.png");
+}
+.set-seven{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/jordanjoggersM.png");
+}
+.set-eight{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/nikejoggersM.jpg");
+}
+.set-nine{
+  background-image: url("file:///Users/Creator/Code/shoes/holder/mens/mens%20joggers.jpg");
+}
 
 .pull-left{
   float: left;
@@ -189,3 +207,55 @@ input[type=text]:focus{
 .clear-right{
   clear: right;
 }
+
+
+#main_content
+{
+margin-bottom: 100px;
+}
+#main_content li
+{
+ display:inline;
+ list-style-type:none;
+ background-color:#688A08;
+ border-radius:5px 5px 0px 0px;
+ font-weight:bold;
+ cursor:pointer;
+}
+#main_content li.notselected
+{
+ background-color: white;
+ width: 300px;
+ color:#292A0A; 
+ font-family: 'Lobster Two', cursive;
+}
+#main_content li.selected
+{
+ background-color: #ff598f;
+ font-family: 'Lobster Two', cursive;
+ width: 300px;
+ color: #01dddd; 
+}
+#main_content .hidden_desc
+{
+ display:none;
+ visibility:hidden;
+}
+#main_content #page_content
+{
+ background-color:#D0F5A9;
+ margin-top:9px;
+ border-radius:0px 5px 5px 5px;
+ color:#2E2E2E;
+ line-height: 1.6em;
+ word-spacing:4px;
+}
+
+
+
+
+
+
+
+
+
