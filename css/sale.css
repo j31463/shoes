@@ -1,4 +1,6 @@
-
+body{
+  background-image: linear-gradient(#c9dcf3, white);
+}
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -87,7 +89,7 @@ input[type=text]:focus{
   float: right;
   position: relative;
   display: inline-block;
-  margin: 10px 50px 30px 0px;
+  margin: 100px 50px 30px 0px;
   width: 4.5em;
   height: 4.5em;
   z-index: -1;
@@ -210,17 +212,12 @@ input[type=text]:focus{
   animation: none;
 }
 
-.design{
+
+
+/*.design2{
   height: 100%;
   z-index: -2;
-  background-image: linear-gradient(#c9dcf3,white);
-  width: 87%;
+  background-image: linear-gradient(#c9dcf3, white);
   position: fixed;
-}
-
-.design2{
-  height: 100%;
-  z-index: -3;
-  background-image: linear-gradient(#76b5e7, #c9dcf3);
-  position: fixed;width: 100%;
-}
+  width: 100%;
+}*/
