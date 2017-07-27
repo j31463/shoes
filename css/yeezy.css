@@ -1,148 +1,239 @@
-.hexagon{
-    float: left;
-    position: relative;
-    left: 30%;
-    width: 500px;
-    height: 1000px;
-    background: green;
-    transform: rotate(120deg);
-    -moz-transform: rotate(120deg);
-    -ms-transform: rotate(120deg);
-    -o-transform: rotate(120deg);
-    -webkit-transform: rotate(120deg);
-    overflow: hidden;
-    visibility: hidden;
-    z-index: -1;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#yeezy {
+  width: 100;
+  overflow: hidden;
+  padding-bottom: 70px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+  height: 100%;
+  background-image: linear-gradient(#333, #ff598f, #333) ;
+  -webkit-transition: all ease 500ms;
+  -moz-transition: all ease 500ms;
+  -o-transition: all ease 500ms;
+  -ms-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+h1 {
+  font-family: 'domine',serif;
+  font-size: 1.75em;
+  padding: 0.2em 0 0.2em 0.2em;
+  color: white;
+  text-shadow: 0 0.06em 0 #424242;
+  position: relative;
+}
+
+#yeezy h1 {
+  background: #c9dcf3;
+}
+
+.logo {
+  background-image: url("file:///Users/Creator/Code/shoes/holder/Screen%20Shot%202017-07-13%20at%202.48.13%20PM.png");
+  float: right;
 
 }
 
-.hexagon-inside{
+
+
+.header {
+  position: relative;
+}
+
+.box_item {
+  width: 220px;
+  height: 290px;
+  position: relative;
+  display: inline-block;
+  margin-left: ;
+  margin-right: 30px;
+}
+
+.hexagon2 {
+  position: absolute;
+  width: 250px;
+  height: 450px;
+  top: -85px;
+}
+
+.hexagon {
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+  cursor: pointer;
+}
+
+.hexagon-in1 {
+  overflow: hidden;
     width: 100%;
-    height: 100%;
-    background: red;
-    transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    -webkit-transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: hidden;
-
-    
- 
-}
-.hexagon-image{
-    width: 100%;
-    height: 100%;
-    background-image: url("file:///Users/Creator/Code/shoes/holder/mens/yeezycollectionM.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    -webkit-transform: rotate(-60deg);
-    visibility: visible;
+  height: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);
 }
 
-.logo{
-    height: 100px;
-    float: left;
-    position: relative;
-    width: 100px;
-    background-image: url("file:///Users/Creator/Code/shoes/holder/adidaslgoo.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    text-align: right;
-}
-h1{
-    float: left;
-   position: absolute;
-   font-size: 45px;
-   font-family: 'Domine', serif;
-}
-h2{
-    float: left;
-    position: absolute;
-    top: 8%;
-    left: 7.5%;
-    font-size: 35px;
-    font-family: 'Domine', serif;
-}
-.hexagon2{
+.hexagon-in2 {
+  -webkit-box-shadow: inset 0 0 0 200px rgba(186,215,235,0.5);
+  box-shadow: inset 0 0 0 200px rgba(186,215,235,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 50%;
+  -webkit-background-size: 125%;
+  -moz-background-size: 125%;
+  background-size: 125%;
+  visibility: visible;
 
-    width: 400px;
-    height: 800px;
-    background: green;
-    transform: rotate(120deg);
-    -moz-transform: rotate(120deg);
-    -ms-transform: rotate(120deg);
-    -o-transform: rotate(120deg);
-    -webkit-transform: rotate(120deg);
-    overflow: hidden;
-    visibility: hidden;
-   
-    
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
-.hexagon2-inside{
-    width: 100%;
-    height: 100%;
-    background: red;
-    transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    -webkit-transform: rotate(-60deg);
-    overflow: hidden;
-    visibility: hidden;
-
-
-
-}
-.hexagon2-image{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    -webkit-transform: rotate(-60deg);
-    visibility: visible;
+.hexagon-in2:hover {
+  -webkit-box-shadow: inset 0 0 0 0px #bad7eb;
+  box-shadow: inset 0 0 0 0px #bad7eb;
 }
 
-.one{
-    background: red;
-    clear: both;
-
-}
-.two{
-    background: blue;
-    clear: both;
-}
-.three{
-    background: hotpink;
-}
-.four{
-    background: green;
-}
-.five{
-    background: black;
-}
-.six{
-    background: purple;
+#yeezy article {
+  padding-top: 1em;
+  width: 1030px;
+  left: 20%;
+  margin: 5px 10px 5px 10px;
+  float: left;
+  position: relative;
 }
 
-
-/*.one{
-    background-image: url("file:///Users/Creator/Code/shoes/holder/mens/yeezyboosts750.jpg");
-    background-size: 100% 60%;
-    float: left;
-    top: 100px;
+.box_item:nth-child(7n-2) {
+  margin-left: 101px;
 }
-.two{
-    background-image: url("file:///Users/Creator/Code/shoes/holder/mens/yeezyboost750black.jpg");
-    background-size: 100% 50%;
-    float: left;
-}*/
+
+.box_item:nth-child(n+5) {
+  margin-top: -55px;
+}
+
+@media (max-width: 1015px) {
+  #yeezy {
+  width: 100%;
+}
+
+}
+
+@media (max-width: 820px) {
+  .box_item:nth-child(5n-1) {
+  margin-left: 102px;
+}
+
+.box_item:nth-child(n+4) {
+  margin-top: -62px;
+}
+
+.box_item:nth-child(7n-2) {
+  margin-left: 0px;
+}
+
+.box_item:nth-child(n+5) {
+  margin-top: -56px;
+}
+
+#yeezy article {
+  width: 610px;
+}
+
+}
+
+@media (max-width: 40px) {
+  #yeezy article {
+  width: 405px;
+}
+
+.box_item:nth-child(5n-1) {
+  margin-left: 0px;
+}
+
+.box_item:nth-child(3n) {
+  margin-left: 102px;
+}
+
+.box_item:nth-child(n+3) {
+  margin-top: -56px;
+}
+
+}
+
+@media (max-width: 450px) {
+  #yeezy article {
+  width: 300px;
+}
+
+.box_item:nth-child(3n) {
+  margin-left: 0px;
+}
+
+.box_item:nth-child(2n) {
+  margin-left: 102px;
+}
+
+.box_item:nth-child(n+2) {
+  margin-top: -56px;
+}
+
+}
