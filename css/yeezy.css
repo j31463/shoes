@@ -1,30 +1,28 @@
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+ figcaption, footer, header, hgroup, 
+menu, nav, output, section, 
+   video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+}*/
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 body {
   line-height: 1;
+    background-image: linear-gradient(#333, #bad7eb, #333) ;
 }
 ol, ul {
   list-style: none;
@@ -50,17 +48,18 @@ table {
   margin: 0 auto;
   margin-bottom: 2.5em;
   height: 100%;
-  background-image: linear-gradient(#333, #ff598f, #333) ;
+/*  background-image: linear-gradient(#333, , #333) ;*/
   -webkit-transition: all ease 500ms;
   -moz-transition: all ease 500ms;
   -o-transition: all ease 500ms;
   -ms-transition: all ease 500ms;
   transition: all ease 500ms;
+
 }
 
 h1 {
   font-family: 'domine',serif;
-  font-size: 1.75em;
+  font-size: 2.4em;
   padding: 0.2em 0 0.2em 0.2em;
   color: white;
   text-shadow: 0 0.06em 0 #424242;
@@ -68,19 +67,36 @@ h1 {
 }
 
 #yeezy h1 {
-  background: #c9dcf3;
+  float: left;
+  background-image: linear-gradient(#333, #ff598f);
+  z-index: -1;
+  margin-left: -0.03%;
+  margin-top: 7%;
+  margin-bottom: -8%;
+  color: #bad7eb;
+  border-radius: 5px;
 }
 
 .logo {
   background-image: url("file:///Users/Creator/Code/shoes/holder/Screen%20Shot%202017-07-13%20at%202.48.13%20PM.png");
+  background-position: center;
+  background-size: 100% 100%;
   float: right;
-
+  position: relative;
+  width: 100px;
+  height: 60px;
+  border: 3px solid #bad7eb;
+  border-radius: 5px;
+  margin: 1.5% 0px 0px 0px;
+  z-index: -1;
 }
 
-
-
 .header {
+  float: left;
   position: relative;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 .box_item {
@@ -88,8 +104,14 @@ h1 {
   height: 290px;
   position: relative;
   display: inline-block;
-  margin-left: ;
-  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+.box_item:hover{
+  pointer-events: clicker;
+}
+.middle{
+  left: 3%;
 }
 
 .hexagon2 {
@@ -122,8 +144,8 @@ h1 {
 }
 
 .hexagon-in2 {
-  -webkit-box-shadow: inset 0 0 0 200px rgba(186,215,235,0.5);
-  box-shadow: inset 0 0 0 200px rgba(186,215,235,0.5);
+  -webkit-box-shadow: inset 0 0 0 200px rgba(255,89,143,0.2);
+  box-shadow: inset 0 0 0 200px rgba(255,89,143,0.2);
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -149,15 +171,16 @@ h1 {
 }
 
 .hexagon-in2:hover {
-  -webkit-box-shadow: inset 0 0 0 0px #bad7eb;
-  box-shadow: inset 0 0 0 0px #bad7eb;
+  -webkit-box-shadow: inset 0 0 0 0px #ff598f;
+  box-shadow: inset 0 0 0 0px #ff598f;
 }
 
 #yeezy article {
   padding-top: 1em;
-  width: 1030px;
-  left: 20%;
-  margin: 5px 10px 5px 10px;
+  width: 1080px;
+  top: -10%;
+  left: 30%;
+  margin: 5px 20px 5px 10px;
   float: left;
   position: relative;
 }
@@ -236,4 +259,47 @@ h1 {
   margin-top: -56px;
 }
 
+}
+.prices{
+  margin-top: 7%;
+  left: 1%;
+  float: left;
+  position: absolute;
+  width: 30%;
+  font-family: 'domine',serif;
+}
+.prices h2{
+  color:  #bad7eb;
+}
+.prices h4{
+  color: #333;
+  text-shadow:
+    -1px -1px 0 #ff598f,
+    1px -1px 0 #ff598f,
+    -1px 1px 0 #ff598f,
+    1px 1px 0 #ff598f;
+    height: 20px;
+}
+.prices h4:hover{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #76b5e7;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.prices form{
+  float: left;
+  position: relative;
+  top: 100px;
+  background-color: #ff598f;
+  border-radius: 5px;
+}
+.prices input{
+  background-color: #ff598f;
+  border-radius: 5px;
+  height: 30px;
 }

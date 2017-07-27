@@ -1,5 +1,5 @@
 body{
-   background-image: linear-gradient(#76b5e7, white, #c9dcf3);
+   background-image: linear-gradient(#76b5e7, white, #c9dcf3,#333);
 }
 
 ul{
@@ -197,5 +197,8 @@ h1{
   float: left;
   margin-left: 5%;
   position: relative;
+}
+#tbox{
+  height: 30px;
 }
 
