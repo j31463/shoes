@@ -5,30 +5,42 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-<!-- 	<link rel="stylesheet" type="text/css" href="css/variables.css"> -->
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
 </head>
 <body id="page1">
 <!--background-->
 
 
-<!--Navigation bar-->
-<nav>
-	<ul>
-		<img class="main" src="file:///Users/Creator/Code/shoes/holder/Screen%20Shot%202017-07-13%20at%202.48.13%20PM.png">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="Men.html">Men's</a></li>
-		<li><a href="Sale.html">On Sale</a></li>
-		<li><a href="women.html">Women's</a></li>
-		<li><a href="kids.html">Kid's</a></li>
-		<form>
-			<input type="text" name="search" placeholder="Search">
-		</form>
-	</ul>
-	</ul>
-</nav>
+<header>
+		
+		
+		
+	 <div class="container">
+	 	
+	 	<img src="file:///Users/Creator/Code/shoes/holder/Screen%20Shot%202017-07-13%20at%202.48.13%20PM.png" alt="logo" class="logo">
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Men.html">Men</a></li>
+				<li><a href="Sale.html">Sales</a></li>
+				<li><a href="women.html">Women</a></li>
+				<li><a href="kids.html">Kids</a></li>
+				<li>
+					<form>
+		        <input type="text" name="search" placeholder="Search">
+		    	</form>
+	    </li>
+			</ul>
+
+		</nav>
+
+</div>
+</header>
+	
 
 <!--banner-->
 <div class="banner">
@@ -44,63 +56,64 @@
 	</div>
 </div>
 
-<!--slidshow-->
-  
+
 
 <div class="slideshow-container">
-	<div class="container mySlides">
-	<img src="file:///Users/Creator/Code/shoes/holder/boosts.jpeg" style="width: 90%; height: 40%;" alt="Womens shoes">
-		<div class="text">
-		    Free Shipping on select Women's running shoes
-		  </div>
-	</div>
+		<div class="container mySlides">
+		<img src="file:///Users/Creator/Code/shoes/holder/boosts.jpeg" style="width: 90%; height: 40%;" alt="Womens shoes">
+			<div class="text">
+			    Walk on clouds with Adidas Boost
+			  </div>
+		</div>
 
-	<div class="container mySlides">
-		<img src="file:///Users/Creator/Code/shoes/holder/lebrons.jpg" style="width: 90%; height: 40%;" alt="pictur of shoes">
-		<div class="text">
-		   Walk on clouds with Adidas Boost
-		  </div>
-	</div>
+		<div class="container mySlides">
+			<img src="file:///Users/Creator/Code/shoes/holder/lebrons.jpg" style="width: 90%; height: 40%;" alt="pictur of shoes">
+			<div class="text">
+			  
+			   Kids basketball shoes now 50% off!
+			  </div>
+		</div>
 
-	<div class="container mySlides">
-		<img src="file:///Users/Creator/Code/shoes/holder/women.jpg" style="width:90%; height: 40%;" alt="picture of shoes">
-		<div class="text">
-		   Kids basketball shoes now 50% off!
-		  </div>
-	</div>
+		<div class="container mySlides">
+			<img src="file:///Users/Creator/Code/shoes/holder/women.jpg" style="width:90%; height: 40%;" alt="picture of shoes">
+			<div class="text">
+			    Free Shipping on select Women's running shoes
+			  </div>
+		</div>
 
-	<div class="container mySlides">
-		<img src="file:///Users/Creator/Code/shoes/holder/yeezys.jpg" style="width: 95%; height: 40%;" alt="yeezy boosts">
-		<div class="text">
-		   Newest Yeezy Boosts Release this weekend
-		  </div>
-	</div>
 
+
+
+	<div class="stay">
+			<button id="left" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" >&#10094;</button>
+	    <button id="right" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>  
 </div>
-	<button class="left" onclick="plusDivs(-1)">&#10094;</button>
-	<button class="right" onclick="plusDivs(+1)">&#10095;</button>
 
-	<script>
-		var slideIndex = 1;
-	showDivs(slideIndex);
 
-	function plusDivs(n) {
-	    showDivs(slideIndex += n);
-	}
 
-	function showDivs(n) {
-	    var i;
-	    var x = document.getElementsByClassName("mySlides");
-	    if (n > x.length) {slideIndex = 1} 
-	    if (n < 1) {slideIndex = x.length} ;
-	    for (i = 0; i < x.length; i++) {
-	        x[i].style.display = "none"; 
-	    }
-	    x[slideIndex-1].style.display = "block"; 
-	}
-	</script>
-	
 
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
         
 	
 <!--next section of page-->
@@ -111,8 +124,7 @@
 		
 	<div class="slides-containertwo">
 	    <img class="blog" src="file:///Users/Creator/Code/shoes/holder/togetherpicshoes.jpeg"  alt="Womens shoes">
-	    <img class="blog" src="file:///Users/Creator/Code/shoes/holder/yeezysupply.jpg" style="height: 500px;"  alt="pic of shoes">
-			<img class="blog" src="file:///Users/Creator/Code/shoes/holder/hunter-johnson-223002.jpg" " alt=" of shoes">
+			<img class="blog" src="file:///Users/Creator/Code/shoes/holder/hunter-johnson-223002.jpg" alt=" of shoes">
 			<img class="blog" src="file:///Users/Creator/Code/shoes/holder/runner.jpeg"  alt="p of shoes">
 	 		<img class="blog" src="file:///Users/Creator/Code/shoes/holder/togetherpicshoes.jpeg"  alt="picture of shoes">
 	</div>
@@ -163,9 +175,10 @@
 		<legend><mark>For More Information</mark></legend>
 		<p>Call this number:<br>
 		(818) 800-4848
-		<p>To learn More about about our company or recieve order information subscribe to our mailing list.</p>
-		</p>
-			<p id="email">Email:</p>
+		<p>To learn More about about our company or recieve order information subscribe to our mailing list. 
+		<br>Email:</p>
+		
+			<p id="email"></p>
 			<input id="tbox" type="text" name="Email"> <br>
 			<input id="ibox" type="submit" name="Subscribe">
 		</fieldset>

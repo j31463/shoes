@@ -1,50 +1,94 @@
+html{
+    font-family: 'Domine', serif;   
+}
+
 body{
    background-image: linear-gradient(#76b5e7, white, #c9dcf3,#333);
 }
 
-ul{
+.container{
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  
 
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: fixed;
-	top: 0;
-	width: 100%;
-  overflow: hidden;
 }
-li{
-
-	display: block;
-	float: left;
-	padding-top: 20px;
-	padding-bottom: 20px;	
-  overflow: hidden;
+header {
+  background: #333;
 }
 
-li a{
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
 
-	
-	 padding: 8px;
-  font-family: 'Domine', serif;
-  color: white;
-  margin-left: 100px;
-  padding: 1.25em 2.5em 1.25em 1.5em ;
+
+.logo{
+  float: left;
+  height: 50px;
+  width: 100px;
+  position: relative;
+  right: 13%;
+
+}
+
+nav{
+  float: right;
+  width: 70%;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-decoration: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 4em;
+  padding-top: 1.3em;
+
+  position: relative;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 
 
 }
-li a:hover{
 
-	background-color: #111;
-	text-decoration: solid red underline;
+nav a:hover{
+  color: white;
+  text-decoration: none;
 }
+nav a::before{
+  content: '';
+  display: block; 
+  height: 5px;
+  width: 100%;
+  background-color: #76b5e7;
+
+  position: absolute;
+  top: -3%;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+
+
 * {box-sizing:border-box}
         /*banner area*/
 .banner > h1{
 
-  float: left;
-  position: relative;
+  float: right;
+  position: absolute;
   background-image: linear-gradient(#4871b6, #c9dcf3);
   height: 100px;
   width: 91.05%;
@@ -69,75 +113,47 @@ li a:hover{
   clear: right;
 
 }
-#logo{
-  margin-bottom:2%;
-  margin-top: 2%;
-}
+
+
+
 .main{
-  height: 60px;
-  width: 100px;
+  height: 50px;
+  width: 80px;
   border-radius: 3px;
   float: left;
   border: none;
+  padding: 0;
+  margin-left: 
+
   background-color: none;
 }
 input[type=text]{
 
-  width: 130px;
+  width: 50%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('searchicon.png'); 
   background-repeat: no-repeat;
-  margin-top: 8px;
-  margin-left: 40px;  
-  padding: 12px 20px 12px 40px;
-  transition: width 0.4s ease-in-out;
-}
-input[type=text]:focus{
-
-  width: 15%;
-  margin-left: 20px;
+    
   
 }
+
 .slideshow-container{
 
   float: left;
-  position: relative;
+  position: absolute;
   z-index: -1;
-  margin-left: 0.25%;
   border-radius: 5px;
-  margin-top: -60%;
+  margin-top: 17%;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 80%;
+  margin-bottom: 10%;
 }
-button{
 
-  float: left;
-  position: relative;
-  margin-left: 3%;
-  height: 30px;
-  width: 40px;
-  bottom: 145px;
-  box-shadow: 2%;
-  border: none;
-  border-radius: 3px;
-  z-index: -1;
-  background-color: rgb(1,221,221);
-}
-button:hover{
 
-  background-color: rgb(118,181,231);
-}
-.left{
-
-  float: left;
-}
-.right{
-
-  float: right;
-  margin-right: 11%;
-}
 .text{
 
   bottom: 100px;
@@ -162,6 +178,7 @@ button:hover{
   height: 10%;
   font-family: 'Domine', serif;
   color: rgb(72,113,182);
+  top: 150px;
 
 }
 
@@ -182,7 +199,6 @@ button:hover{
   text-align: center;
   margin-right: 5%;
   border-radius: 5px;
-
 }
 
 fieldset{
@@ -192,6 +208,7 @@ fieldset{
   position: relative;
   background-color: backgroundblue /*rgb(186,215,235)*/;
   color: rgb(255,89,143);
+  bottom: 0;
 }
 h1{
   float: left;
@@ -201,4 +218,17 @@ h1{
 #tbox{
   height: 30px;
 }
-
+#main{
+  max-width: 50%;
+  max-height: 50%;
+}
+#right{
+  position: absolute;
+  right: 18%;
+  top: 50%;
+}
+#left{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}

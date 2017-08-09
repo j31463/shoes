@@ -4,7 +4,9 @@ html{
     padding: 0px;
 }
 body{
-  background-image: linear-gradient(grey, #c9dcf3, #333, #c9dcf3);
+  background-image: linear-gradient(grey, #01dddd, #333, #c9dcf3);
+  margin: 0;
+  padding: 0;
 }
 
 * {box-sizing:border-box}
@@ -12,8 +14,8 @@ body{
   margin-top: 0;
 }
 .main{
-  height: 60px;
-  width: 100px;
+  height: 50px;
+  width: 80px;
   border-radius: 3px;
   float: left;
   border: none;
@@ -36,7 +38,8 @@ input[type=text]{
   font-size: 16px;
   background-color: white; 
   background-repeat: no-repeat;  
-  padding: 12px 20px 12px 40px;
+  margin-top: 5px;
+  padding: 5px 20px 10px 40px;
   transition: width 0.4s ease-in-out;
 }
 input[type=text]:focus{
@@ -76,11 +79,11 @@ h1 {
   font-family: bebas_neueregular ,sans-serif;
   font-size: 1.75em;
   padding: 0.2em 0 0.2em 0.2em;
-  color: white;
+  color: #01dddd;
   text-shadow: 0 0.06em 0 #424242;
   position: relative;
   top:30px;
-  z-index: -2;
+ 
 }
 
 #yeezy h1 {
@@ -123,6 +126,7 @@ h1 {
   -ms-transform: rotate(120deg);
   transform: rotate(120deg);
   cursor: pointer;
+  left: 10%;
 }
 
 .hexagon-in1 {
@@ -326,54 +330,80 @@ h2{
   top: 10px;
   position: relative;
 }
+header {
+  background: #333;
+}
 
-.navbar {
-  overflow: hidden;
-  background-color: transparent;
-  border-top: 1px solid #ff4e50;
-  position: fixed;
-  bottom: 0;
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.logo{
+  float: left;
+  height: 50px;
+  width: 100px;
+}
+
+nav{
+  float: right;
+  width: 70%;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 5px;
+
+  position: relative;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+
+nav a:hover{
+  color: white;
+  text-decoration: none;
+}
+nav a::before{
+  content: '';
+  display: block; 
+  height: 5px;
+  width: 100%;
+  background-color: #00bfaf;
+
+  position: absolute;
+  top: -3%;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
   width: 100%;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 30px;
-  margin-left: 7%;
-  text-decoration: none;
-  font-size: 17px;
-}
-.navbar form, input{
-  margin-left: 7%;
-  bottom: 10px;
-}
-.navbar a:hover{
 
-  background-color: #111;
-  text-decoration: solid red underline;
-}
-}input[type=text]{
-
-  
-  transition: width 0.4s ease-in-out;
-}
-input[type=text]:focus{
-
-  width: 15%;
-  margin-left: 20px;
-  }
-.tabs{
- 
-
-}
 .all{
   max-width: 1200px;
   float: left;
   margin: auto;
   position: relative;
   left: 15%;
+  top: 20px;
 
+}
+#rip{
+  right: 11.5%;
 }
